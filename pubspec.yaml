@@ -1,0 +1,380 @@
+name: revolt_landing
+description: reVolt Official
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  intl: "^0.15.6"
+  flutter:
+    sdk: flutter
+  flutter_svg: ^0.17.1
+  matrix4_transform: ^1.1.3
+  url_launcher: ^5.4.2
+  built_value: ^6.7.1
+  firebase: ^5.0.4
+  csv: ^4.0.3
+  spreadsheet_decoder: ^1.1.0
+  google_tag_manager: ^0.0.3
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^1.0.0
+  built_value_generator: ^6.7.1
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/official/logo-dark-colour.svg
+    - assets/official/logo-white-colour.svg
+    - assets/official/logo-dark-colour.png
+    - assets/official/logo-white-colour.png
+    - assets/linkText/AboutWhite.png
+    - assets/linkText/SearchWhite.png
+    - assets/linkText/ShopWhite.png
+    - assets/brands/Vector.png
+    - assets/brands/Vector-1.png
+    - assets/brands/Vector-2.png
+    - assets/linkText/AboutGrey.png
+    - assets/linkText/SearchGrey.png
+    - assets/linkText/ShopGrey.png
+    - assets/decorations/iPhone X.png
+    - assets/page_one/iphone.png
+    - assets/decorations/join_the_revolt.png
+    - assets/decorations/SIGN IN.png
+    - assets/decorations/backgroundHome2.jpg
+    - assets/page_one/darkGreyLongBubbleError.png
+    - assets/page_one/darkGreyLongBubbleFocus.png
+    - assets/page_one/exclamationSign.png
+    - assets/page_one/tickSign.png
+    - assets/page_one/darkGreyLongBubbleDone.png
+    - assets/page_one/downArrow.png
+    - assets/page_one/brandInsta.png
+    - assets/joinTheRevoltButton.png
+    - assets/joinTheRevoltButton2.png
+
+    #page1bottom4
+    - assets/page_one/bottom_four/0.00.png
+    - assets/page_one/bottom_four/500.png
+    - assets/page_one/bottom_four/100100.png
+    - assets/page_one/bottom_four/100.png
+    - assets/page_one/bottom_four/socket.png
+
+    #page2
+    - assets/page_three/darkgreen.png
+    - assets/page_three/cross.png
+    - assets/page_three/V.png
+    - assets/page_two/thermo.png
+    - assets/page_two/darkGreenRec.png
+    - assets/page_two/dashOneL.png
+    - assets/page_two/dashOneR.png
+    - assets/page_two/dashTwo.png
+    - assets/page_two/ausMappng.png
+    - assets/page_two/dashStraight.png
+
+    #page3CentralContent
+    - assets/page_three/thinbar.png
+    - assets/page_three/whitecontainer.png
+    - assets/page_three/greenbig.png
+    - assets/page_three/greensmall.png
+    - assets/page_three/greybig.png
+    - assets/page_three/greywide.png
+    - assets/page_three/pluscircle.png
+    - assets/page_three/leftturn.png
+    - assets/page_three/rightturn.png
+    - assets/page_three/lemonsmall.png
+    - assets/page_three/usageconnectionBack.png
+    - assets/page_three/Line.png
+    - assets/page_three/transparentsmall.png
+    - assets/page_one/darkGreyLongBubble.png
+    - assets/page_three/darkgreen.png
+    - assets/page_three/gstMark.png
+    - assets/page_three/users.png
+    - assets/page_three/longDotLine.png
+    - assets/page_three/numberswitch/numberSwitch1.png
+    - assets/page_three/numberswitch/numberSwitch2.png
+    - assets/page_three/numberswitch/numberSwitch3.png
+    - assets/page_three/numberswitch/numberSwitch4.png
+    - assets/page_three/numberswitch/numberSwitch5.png
+
+    #Chart
+    - assets/page_three/chart/chart.png
+    - assets/page_three/chart/greenBubbleCHART.png
+    - assets/page_three/chart/holobubblechart.png
+
+    #Page3 Map
+    - assets/page_three/AusMap/states/NSW/NSW.png
+    - assets/page_three/AusMap/states/NSW/NSW_Hover.png
+    - assets/page_three/AusMap/states/NT/NT.png
+    - assets/page_three/AusMap/states/NT/NT_Hover.png
+    - assets/page_three/AusMap/states/QLD/QLD.png
+    - assets/page_three/AusMap/states/QLD/QLD_Default.png
+    - assets/page_three/AusMap/states/QLD/QLD_Hover.png
+    - assets/page_three/AusMap/states/SA/SA.png
+    - assets/page_three/AusMap/states/SA/SA_Hover.png
+    - assets/page_three/AusMap/states/TAS/TAS.png
+    - assets/page_three/AusMap/states/TAS/TAS_Hover.png
+    - assets/page_three/AusMap/states/VIC/VIC.png
+    - assets/page_three/AusMap/states/VIC/VIC_Hover.png
+    - assets/page_three/AusMap/states/WA/WA.png
+    - assets/page_three/AusMap/states/WA/WA_Hover.png
+
+    - assets/page_three/WA/Synergy.png
+    - assets/page_three/WA/HorizonPower.png
+    - assets/page_three/WA/horizonSelected.png
+    - assets/page_three/WA/SynergySelected.png
+
+
+    - assets/page_three/VIC/enlarged/HV/auznetEHV.png
+    - assets/page_three/VIC/enlarged/HV/citypowerEHV.png
+    - assets/page_three/VIC/enlarged/HV/jenemaEHV.png
+    - assets/page_three/VIC/enlarged/HV/powercorEHV.png
+    - assets/page_three/VIC/enlarged/HV/unitedEnergyEHV.png
+    - assets/page_three/VIC/enlarged/normal/auznetEnlarged.png
+    - assets/page_three/VIC/enlarged/normal/citypowerEnlarged.png
+    - assets/page_three/VIC/enlarged/normal/powercoreEnlarged.png
+    - assets/page_three/VIC/enlarged/normal/unitedEnergyEnlarged.png
+    - assets/page_three/VIC/enlarged/normal/jenemaEnlarged.png
+    - assets/page_three/VIC/normal/HV/auznet.png
+    - assets/page_three/VIC/normal/HV/jenema.png
+    - assets/page_three/VIC/normal/HV/powercor.png
+    - assets/page_three/VIC/normal/HV/cityPower.png
+    - assets/page_three/VIC/normal/HV/uniitedenergy.png
+    - assets/page_three/VIC/normal/normal/auzNet.png
+    - assets/page_three/VIC/normal/normal/unitedEnergy.png
+    - assets/page_three/VIC/normal/normal/jenema.png
+    - assets/page_three/VIC/normal/normal/powercor.png
+    - assets/page_three/VIC/normal/normal/citypower.png
+    - assets/page_three/phaseBarBlack.png
+    - assets/page_three/phaseBarGrey.png
+    - assets/page_three/phaseBarGreen.png
+    - assets/page_three/chart/WEEKLY.png
+    - assets/page_three/chart/onceOFF.png
+    - assets/page_three/chart/holobubblechartWEEKLY.png
+    - assets/page_three/chart/greenBubbleCHARTweekly.png
+    - assets/page_three/QLD/energex.png
+    - assets/page_three/QLD/energexG.png
+    - assets/page_three/QLD/ergon.png
+    - assets/page_three/QLD/ergonG.png
+    - assets/page_three/NSW/EvoG.png
+    - assets/page_three/NSW/Endavor.png
+    - assets/page_three/NSW/AusgridG.png
+    - assets/page_three/NSW/Evo.png
+    - assets/page_three/NSW/Essential.png
+    - assets/page_three/NSW/Ausgrid.png
+    - assets/page_three/NSW/EndeavourG.png
+    - assets/page_three/NSW/EssetntialG.png
+
+    #page4 wheel
+    - assets/page_four/Wheel/2000w.png
+    - assets/page_four/Wheel/always.png
+    - assets/page_four/Wheel/c1.png
+    - assets/page_four/Wheel/c2.png
+    - assets/page_four/Wheel/c3.png
+    - assets/page_four/Wheel/c4.png
+    - assets/page_four/Wheel/c5.png
+    - assets/page_four/Wheel/c5_1.png
+    - assets/page_four/Wheel/c5_2.png
+    - assets/page_four/Wheel/c5_3.png
+    - assets/page_four/Wheel/c5_4.png
+    - assets/page_four/Wheel/c5_5.png
+    - assets/page_four/Wheel/kitchen.png
+    - assets/page_four/Wheel/other.png
+    - assets/page_four/Wheel/shadow.png
+    - assets/page_four/Wheel/home.png
+    - assets/page_four/Wheel/heat.png
+    - assets/page_four/Wheel/red.png
+
+    #other pg4
+    - assets/page_four/alarm.png
+    - assets/page_four/battery.png
+    - assets/FadedV.png
+
+    #pinned logo
+    - assets/animation/re_olt.png
+    - assets/animation/_v_.png
+    - assets/animation/_v_white.png
+    - assets/animation/black.png
+
+    #page 5
+    - assets/page_five/bar.png
+    - assets/page_five/+2.png
+    - assets/page_five/arrowsSecond.png
+    - assets/page_five/arrowsThird.png
+    - assets/page_five/arrowsOne.png
+    - assets/page_five/=.png
+    - assets/page_five/arrowDown.png
+    - assets/page_five/+1.png
+    - assets/page_five/+3.png
+    - assets/page_five/reVoltLogo.png
+    - assets/page_five/appCom.png
+    - assets/page_five/iPhonePg5.png
+    - assets/page_five/whiteLongBubble.png
+    - assets/page_five/dashedConnector.png
+    - assets/page_five/arrowsZero.png
+    - assets/page_five/greenSquareBubble.png
+    - assets/page_five/reVoltLogo.png
+    - assets/Navbar/bar3.png
+    - assets/NavBarBackground.jpg
+    - assets/page_one/test.svg
+    - assets/Navbar/bar3white.png
+    - assets/page_one/SIGNIN.png
+    - assets/page_five/scanIcon.png
+    - assets/page_five/footer/facebook.png
+    - assets/page_five/footer/facebookG.png
+    - assets/page_five/footer/ins.png
+    - assets/page_five/footer/insG.png
+    - assets/page_five/footer/linkedin.png
+    - assets/page_five/footer/linkedinG.png
+    - assets/page_five/footer/twitter.png
+    - assets/page_five/footer/twitterG.png
+
+    #sign in
+    - assets/FadedV2.png
+    - assets/animation/white.png
+    - assets/signInPage/AppStore.png
+    - assets/signInPage/goBackButton.png
+    - assets/signInPage/GooglePlay.png
+    - assets/signInPage/signInArrow.png
+    - assets/resetPassword/resetPassBubble.png
+    - assets/resetPassword/backBubble.png
+
+    #data
+    - assets/data/peopleNumber1.xlsx
+    - assets/data/peopleNumber2.xlsx
+    - assets/data/peopleNumber3.xlsx
+    - assets/data/peopleNumber4.xlsx
+    - assets/data/peopleNumber5.xlsx
+    - assets/data/peopleNumber1.csv
+    - assets/data/peopleNumber2.csv
+    - assets/data/peopleNumber3.csv
+    - assets/data/peopleNumber4.csv
+    - assets/data/peopleNumber5.csv
+
+
+  #  - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: MontserratRegular
+      fonts:
+        - asset: assets/fonts/MontserratRegular.ttf
+
+    - family: MontserratMedium
+      fonts:
+        - asset: assets/fonts/MontserratMedium.ttf
+
+    - family: KarbonSemibold
+      fonts:
+        - asset: assets/fonts/KarbonSemibold.ttf
+
+    - family: KarbonMedium
+      fonts:
+        - asset: assets/fonts/KarbonMedium.ttf
+
+    - family: MontserratSemibold
+      fonts:
+        - asset: assets/fonts/MontserratSemiBold.ttf
+
+    - family: KarbonLight
+      fonts:
+        - asset: assets/fonts/KarbonLight.ttf
+
+    - family: MontserratBold
+      fonts:
+        - asset: assets/fonts/MontserratBold.ttf
+
+    - family: KarbonRegular
+      fonts:
+        - asset: assets/fonts/KarbonRegular.ttf
+
+
+
+
+      #    - asset: assets/fonts/Gotham-Black.ttf
+      #     - asset:  assets/fonts/Gotham-BlackItalic.ttf
+      #     - asset: assets/fonts/Gotham-Bold.ttf
+      #    - asset:  assets/fonts/Gotham-BoldItalic.ttf
+      #    - asset:    assets/fonts/Gotham-Book.ttf
+      #    - asset:       assets/fonts/Gotham-BookItalic.ttf
+      #    - asset:       assets/fonts/Gotham-Light.ttf
+      #    - asset:       assets/fonts/Gotham-LightItalic.ttf
+      #    - asset:      assets/fonts/Gotham-Medium.ttf
+      #    - asset:      assets/fonts/Gotham-MediumItalic.ttf
+      #     - asset:      assets/fonts/Gotham-Thin.ttf
+      #    - asset:       assets/fonts/Gotham-ThinItalic.ttf
+      #      - asset:      assets/fonts/Gotham-Ultra.ttf
+      #    - asset:      assets/fonts/Gotham-UltraItalic.ttf
+      #     - asset:      assets/fonts/Gotham-XLight.ttf
+      #     - asset:      assets/fonts/Gotham-XLightItalic.ttf
+      #   - asset:   assets/fonts/Karbon - Bold.otf
+      #   - asset:    assets/fonts/Karbon - Bold Italic.otf
+      #- asset:    assets/fonts/Karbon - Hairline.otf
+      #- asset:   assets/fonts/Karbon - Hairline Italic.otf
+      #- asset:   assets/fonts/Karbon - Light.otf
+      #- asset:   assets/fonts/Karbon - Light.ttf
+      #     - asset:    assets/fonts/Karbon - Light Italic.otf
+      #   - asset:   assets/fonts/Karbon - Medium.otf
+      # - asset:    assets/fonts/Karbon - Medium.ttf
+      #  - asset:    assets/fonts/Karbon - Medium Italic.otf
+      #   - asset:   assets/fonts/Karbon - Regular.otf
+      #    - asset:    assets/fonts/Karbon - Regular.ttf
+      #    - asset:     assets/fonts/Karbon - Regular Italic.otf
+      #    - asset:    assets/fonts/Karbon - Regular Italic.ttf
+      #    - asset:     assets/fonts/Karbon - Semibold.otf
+      #    - asset:    assets/fonts/Karbon - Semibold Italic.otf
+      #    - asset:     assets/fonts/Karbon - Thin.otf
+      #    - asset:     assets/fonts/Karbon - Thin.ttf
+    #      - asset:     assets/fonts/Karbon - Thin Italic.otf
+
+
+
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

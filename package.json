@@ -1,0 +1,30 @@
+{
+  "name": "revolt_landing",
+  "version": "1.0.0",
+  "description": "reVolt Official",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "firebase": "^7.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.revolt.energy/leo_yu/revolt-website/-/tree/master"
+  },
+  "keywords": [
+    "Landing",
+    "Page",
+    "reVolt",
+    "Official",
+    "Leo"
+  ],
+  "author": "LEO Yu",
+  "license": "ISC"
+}
